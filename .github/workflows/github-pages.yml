@@ -33,7 +33,8 @@ jobs:
       - name: Prepare assets
         run: |
           mkdir -p output_dir
-          cp -r audio fonts images misc videos output_dir/
+          # cp -r audio fonts images misc videos output_dir/
+          cp -r images output_dir/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
